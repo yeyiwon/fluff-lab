@@ -1,0 +1,57 @@
+{
+  "environment": "Mac in-app browser; viewport 516x881; Idle ON; 30 warmup + 180 measured frames; frame interval, not GPU timer",
+  "candidates": {
+    "mochi": {
+      "medianMs": 16.7,
+      "p95Ms": 18,
+      "triangles": 1274074,
+      "drawCalls": 5,
+      "dpr": 1.5,
+      "resolution": [
+        735,
+        855
+      ],
+      "geometries": 5,
+      "gpuMemory": "UNKNOWN"
+    },
+    "potato": {
+      "medianMs": 16.7,
+      "p95Ms": 17.5,
+      "triangles": 1274618,
+      "drawCalls": 5,
+      "dpr": 1.5,
+      "resolution": [
+        735,
+        855
+      ],
+      "geometries": 5,
+      "gpuMemory": "UNKNOWN"
+    },
+    "messy": {
+      "medianMs": 16.7,
+      "p95Ms": 18.7,
+      "triangles": 1274874,
+      "drawCalls": 5,
+      "dpr": 1.5,
+      "resolution": [
+        735,
+        855
+      ],
+      "geometries": 5,
+      "gpuMemory": "UNKNOWN"
+    },
+    "proceduralMochi": {
+      "medianMs": 16.7,
+      "p95Ms": 18.6,
+      "triangles": 858074,
+      "drawCalls": 5,
+      "dpr": 1.5,
+      "resolution": [
+        735,
+        855
+      ],
+      "geometries": 5,
+      "gpuMemory": "UNKNOWN"
+    }
+  }
+}

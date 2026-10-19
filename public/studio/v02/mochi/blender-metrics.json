@@ -1,0 +1,31 @@
+{
+  "pipeline": "Blender Hair Curves -> Geometry Nodes Curve to Mesh -> GLB",
+  "version": "5.2.1 LTS",
+  "guides": 26000,
+  "curvePoints": 234000,
+  "meshVertices": 702000,
+  "meshPolygons": 624000,
+  "parameters": {
+    "bodyWidth": 1.08,
+    "bodyHeight": 0.86,
+    "bodyShape": 0.65,
+    "furLength": 0.2,
+    "furDensity": 26000,
+    "furDirection": 0.5,
+    "eyeSize": 0.042,
+    "eyeSpacing": 0.52,
+    "eyeDepth": 0.015,
+    "eyeHeight": -0.08,
+    "armOffset": 0.88,
+    "footSpacing": 0.36,
+    "limbSize": 0.12,
+    "roughness": 0.94,
+    "lighting": 1
+  },
+  "candidate": "mochi",
+  "layers": {
+    "0": 14239,
+    "1": 11380,
+    "2": 381
+  }
+}

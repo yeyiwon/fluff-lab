@@ -1,0 +1,10 @@
+export const bodies=['poof','dumpling','blob'] as const;
+export const eyes=['bean','sleepy','round','derpy','sparkle','happy','unimpressed','surprised','glossy','curious','oval','shy','wide'] as const;
+export const furs=['short','soft','messy'] as const;
+export const tones=['cream','charcoal','white','gray','lavender','pink'] as const;
+export const details=['none','ribbon','star','horn','glasses','flower','beanie','headphones','crown'] as const;
+export type Body=typeof bodies[number];
+export type Appearance={body:Body;eye:typeof eyes[number];fur:typeof furs[number];tone:typeof tones[number];detail:typeof details[number];seed:number;eyeScale:number;detailScale:number;detailOffset:number;detailTone:'original'|'pink'|'lavender'|'lime'};
+export const initial:Appearance={body:'dumpling',eye:'bean',fur:'soft',tone:'cream',detail:'none',seed:38127,eyeScale:1,detailScale:1,detailOffset:0,detailTone:'original'};
+export const palette={cream:['#fff4d8','#e2d2ad','#aa9475'],charcoal:['#898b91','#505258','#282a30'],white:['#ffffff','#e6e7ed','#adb1bf'],gray:['#cdd2db','#9ca4b0','#667180'],lavender:['#eee6ff','#c9b9df','#9585ac'],pink:['#ffe7ee','#edbdcf','#b88da4']} as const;
+export function validate(raw:unknown):Appearance {if(!raw||typeof raw!=='object')return {...initial};const r=raw as Record<string,unknown>;const a={...initial};for(const [k,values] of Object.entries({body:bodies,eye:eyes,fur:furs,tone:tones,detail:details})){const v=r[k];if(typeof v==='string'&&(values as readonly string[]).includes(v))Object.assign(a,{[k]:v});}if(typeof r.seed==='number'&&Number.isInteger(r.seed)&&r.seed>=0&&r.seed<=0xffffffff)a.seed=r.seed;if(typeof r.eyeScale==='number'&&Number.isFinite(r.eyeScale))a.eyeScale=Math.min(1.5,Math.max(.75,r.eyeScale));for(const [key,lo,hi] of [['detailScale',.85,1.15],['detailOffset',-.06,.10]] as const){const v=r[key];if(typeof v==='number'&&Number.isFinite(v))a[key]=Math.min(hi,Math.max(lo,v));}if(['original','pink','lavender','lime'].includes(String(r.detailTone)))a.detailTone=r.detailTone as Appearance['detailTone'];return a;}

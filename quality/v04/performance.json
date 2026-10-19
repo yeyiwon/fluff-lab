@@ -1,0 +1,24 @@
+{
+  "environment": "Mac Codex in-app browser; viewport 390x844; DPR cap 1.5",
+  "method": "30 warm-up frames after model load, 180 frame-interval samples; not GPU timing",
+  "optimized": {
+    "medianMs": 16.6,
+    "p95Ms": 20.5,
+    "trianglesPerFrame": 1348538,
+    "drawCalls": 62,
+    "geometries": 28,
+    "configuration": "Sparkling Eyes, soft fur, no accessory, reduced motion enabled; blurred reflection excludes Groom meshes"
+  },
+  "earlierObservation": {
+    "medianMs": 39.1,
+    "p95Ms": 43.5,
+    "trianglesPerFrame": 2593410,
+    "drawCalls": 49,
+    "geometries": 22
+  },
+  "limitations": [
+    "Different open-tab conditions; not a controlled before/after benchmark",
+    "No physical mobile device measurement",
+    "No GPU byte-memory or thermal soak measurement"
+  ]
+}

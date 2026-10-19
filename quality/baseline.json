@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "parameters": {
+    "bodyWidth": 1.08,
+    "bodyHeight": 0.86,
+    "bodyShape": 0.65,
+    "furLength": 0.23,
+    "furDensity": 26000,
+    "furDirection": 0.75,
+    "eyeSize": 0.042,
+    "eyeSpacing": 0.52,
+    "eyeDepth": 0.035,
+    "limbSize": 0.12,
+    "roughness": 0.86,
+    "lighting": 1
+  }
+}

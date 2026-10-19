@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.expo/
+.DS_Store
+
+.studio-build/
+*.blend1
+
+.env
+.env.*
+!.env.example
+work/
+outputs/
+*.blend
+*.log
