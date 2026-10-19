@@ -13,3 +13,5 @@ work/
 outputs/
 *.blend
 *.log
+
+.vercel/
